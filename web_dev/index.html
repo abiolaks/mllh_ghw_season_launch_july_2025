@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>MLH Workshop Website</title>
-    </head>
-    <body>
-        <h1>
-            Welcome to MLH Workshop website
-        </h1>
-    </body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Civic SDK -->
+    <script src="https://hosted-sip.civic.com/js/civic.sip.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="login-btn">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome!</h1>
+            <p>I'm Kingsely, a Data Scientist passionate about turning raw data into actionable insights and impactful solutions</p>
+            <button>View My Work</button>
+        </section>
+        <section id="about">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>
+                    Certified AI & Data Scientist with a passion for building scalable machine learning and generative AI solutions. Experienced in LLM engineering, MLOps, and cloud integration (AWS, Azure, Huawei). I love turning data into real-world impact and collaborating on innovative projects.
+                </p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/project1.png" alt="Project 1">
+                    <h3>Personalized recommendation</h3>
+                    <p>Developed a machine learning-based recommendation system that analyzes user behavior and preferences to deliver tailored product and content suggestions, enhancing user engagement and satisfaction.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.png" alt="Project 2">
+                    <h3>Customer Value Management System</h3>
+                    <p>Designed and implemented a customer value system that segments users based on behavioral and transactional data, enabling targeted marketing strategies and improved customer retention.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.png" alt="Project 3">
+                    <h3>Fraud Detection</h3>
+                    <p>Built a real-time fraud detection model using advanced machine learning techniques to identify and prevent suspicious activities, reducing financial risk and enhancing platform security.</p>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="name" required>
+                <input type="email" placeholder="email" required>
+                <textarea placeholder="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <!-- Social icons/links here -->
+        </div>
+        <p>&copy; 2025 Lawani Abiola Kingsley</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

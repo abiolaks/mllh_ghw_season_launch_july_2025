@@ -1,0 +1,234 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Minimalist styling for portfolio images */
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0e7ff 0%, #f0fdfa 100%);
+    color: #22223b;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+header {
+    background: #22223b;
+    color: #fff;
+    padding: 1.2rem 0;
+    box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a, #login-btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.nav-links a:hover, #login-btn:hover {
+    color: #a3bcf7;
+}
+
+main {
+    max-width: 900px;
+    margin: 2.5rem auto 0 auto;
+    padding: 0 1.5rem;
+}
+
+#hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #3a86ff;
+}
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+#hero button {
+    background: #3a86ff;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#hero button:hover {
+    background: #22223b;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2.5rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(34,34,59,0.06);
+    padding: 2rem 1.5rem;
+    margin-bottom: 3rem;
+}
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(58,134,255,0.08);
+}
+.bio {
+    flex: 1;
+    min-width: 220px;
+}
+.bio h2 {
+    margin-top: 0;
+    color: #3a86ff;
+    font-size: 1.5rem;
+}
+.bio p {
+    white-space: pre-line;
+    font-size: 1.05rem;
+    color: #22223b;
+    margin-top: 0.7rem;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background: #f0fdfa;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(58,134,255,0.07);
+    padding: 1.2rem 1rem 1.5rem 1rem;
+    max-width: 260px;
+    text-align: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(58,134,255,0.13);
+}
+.project-card img {
+    width: 210px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.7rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-card h3 {
+    color: #3a86ff;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+.project-card p {
+    font-size: 0.98rem;
+    color: #22223b;
+    margin: 0;
+}
+
+#contact {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(34,34,59,0.06);
+    padding: 2rem 1.5rem;
+    margin: 3rem 0 2rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact h2 {
+    color: #3a86ff;
+    margin-top: 0;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#contact input, #contact textarea {
+    padding: 0.7rem 1rem;
+    border: 1px solid #a3bcf7;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #f0fdfa;
+    resize: none;
+}
+#contact button {
+    background: #3a86ff;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background 0.2s;
+}
+#contact button:hover {
+    background: #22223b;
+}
+
+footer {
+    background: #22223b;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0 0.7rem 0;
+    margin-top: 2rem;
+    border-radius: 16px 16px 0 0;
+}
+.social-links {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #about {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
